@@ -45,7 +45,7 @@ export async function POST(req: Request) {
         data: {
           isPaid: true,
              // @ts-ignore
-          ShippingAdress: {
+          shippingAdress: {
             create: {
               name: session.customer_details!.name!,
               city: shippingAddress!.city!,
@@ -56,7 +56,7 @@ export async function POST(req: Request) {
             },
           },
            // @ts-ignore
-          BillingAddress: {
+          billingAddress: {
             create: {
               name: session.customer_details!.name!,
               city: billingAddress!.city!,
