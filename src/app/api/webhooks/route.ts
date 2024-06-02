@@ -55,6 +55,7 @@ export async function POST(req: Request) {
               state: shippingAddress!.state,
             },
           },
+           // @ts-ignore
           billingAddress: {
             create: {
               name: session.customer_details!.name!,

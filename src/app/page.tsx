@@ -127,7 +127,7 @@ export default function Home() {
           </div>
 
           <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:max-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
-            <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+            <div className="flex  md:relative flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
               <div className="flex gap-0.5 mb-2">
                 <Star className="h-5 w-5 text-green-600 fill-green-600" />
                 <Star className="h-5 w-5 text-green-600 fill-green-600" />
@@ -138,7 +138,7 @@ export default function Home() {
               <div className="text-lg leading-8">
                 <p>"The case feels durable and looking nice!"</p>
               </div>
-              <div className="flex gap-4 mt-2">
+              <div className="flex gap-4 mt-2 static md:absolute md:bottom-0">
                 <img
                   src="/users/user-1.png"
                   alt="user"
