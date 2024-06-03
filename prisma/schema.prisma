@@ -8,7 +8,7 @@ datasource db {
 }
 
 enum OrderStatus {
-  fullfiled
+  fulfilled
   shipped
   awaiting_shipment
 }
@@ -32,7 +32,7 @@ enum CaseFinish {
   textured
 }
 
-enum CaseColour {
+enum CaseColor {
   black
   blue
   rose
@@ -43,10 +43,10 @@ model Configuration {
   width           Int
   height          Int
   imageUrl        String
+  color           CaseColor?
   model           PhoneModel?
   material        CaseMaterial?
   finish          CaseFinish?
-  color           CaseColour?
   croppedImageUrl String?
   Order           Order[]
 }
@@ -57,27 +57,29 @@ model User {
   Order Order[]
 
   createdAt DateTime @default(now())
-  updated   DateTime @updatedAt()
+  updatedAt DateTime @updatedAt
 }
 
 model Order {
-  id               String          @id @default(cuid())
-  configurationId  String
-  configuration    Configuration   @relation(fields: [configurationId], references: [id])
-  User             User?           @relation(fields: [userId], references: [id])
-  userId           String?
-  amount           Float
-  isPaid           Boolean         @default(false)
-  status           OrderStatus     @default(awaiting_shipment)
-  ShippingAdress   ShippingAdress? @relation(fields: [ShippingAdressId], references: [id])
-  ShippingAdressId String?
-  BillingAdress    BillingAdress?  @relation(fields: [BillingAdressId], references: [id])
-  BillingAdressId  String?
-  createdAt        DateTime        @default(now())
-  updatedAt        DateTime        @updatedAt
+  id              String        @id @default(cuid())
+  configurationId String
+  configuration   Configuration @relation(fields: [configurationId], references: [id])
+  user            User          @relation(fields: [userId], references: [id])
+  userId          String
+  amount          Float
+  isPaid          Boolean       @default(false)
+  status          OrderStatus   @default(awaiting_shipment)
+
+  shippingAddress   ShippingAddress? @relation(fields: [shippingAddressId], references: [id])
+  shippingAddressId String?
+  billingAddress    BillingAddress?  @relation(fields: [billingAddressId], references: [id])
+  billingAddressId  String?
+
+  createdAt DateTime @default(now())
+  updated   DateTime @updatedAt
 }
 
-model ShippingAdress {
+model ShippingAddress {
   id          String  @id @default(cuid())
   name        String
   street      String
@@ -89,13 +91,13 @@ model ShippingAdress {
   orders      Order[]
 }
 
-model BillingAdress {
+model BillingAddress {
   id          String  @id @default(cuid())
   name        String
   street      String
   city        String
-  country     String
   postalCode  String
+  country     String
   state       String?
   phoneNumber String?
   orders      Order[]
