@@ -10,12 +10,11 @@ const LoginModal = ({isOpen, setIsOpen} : {
     setIsOpen:  Dispatch<SetStateAction<boolean>>
 }) => {
   return (
+    <div className="h-screen">
     <Dialog onOpenChange={setIsOpen} open={isOpen}>
         <DialogContent className='absolute z-[999999]'>
             <DialogHeader>
-                <div className="relative mx-auto w-24 h-24 mb-2">
-                    <Image src="/snake-1.png" alt='Snake Img' className='object-contain' fill/>
-                </div>
+              
                 <DialogTitle className='text-3xl text-center font-bold tracking-tight text-gray-900'>
                     Log In to continue
                 </DialogTitle>
@@ -33,6 +32,7 @@ const LoginModal = ({isOpen, setIsOpen} : {
             </div>
         </DialogContent>
     </Dialog>
+    </div>
   )
 }
 
