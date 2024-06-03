@@ -20,7 +20,7 @@ export default function Home() {
               <div className="relative w-fit tracking-light text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
                 <h1>
                   Your image on a{" "}
-                  <span className="bg-green-600 px-2 text-white">Custom</span>{" "}
+                  <span className="bg-purple-600 px-2 rounded-md text-white">Custom</span>{" "}
                   Phone Case
                 </h1>
                 <p className="text-gray-500 mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
@@ -33,15 +33,15 @@ export default function Home() {
                 <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
                   <div className="space-y-2">
                     <li className="flex gap-1.5 items-center text-left text-xl">
-                      <Check className="h-5 w-5 shrink-0 text-green-600"></Check>
+                      <Check className="h-5 w-5 shrink-0 text-purple-600"></Check>
                       High-quality, durable material
                     </li>
                     <li className="flex gap-1.5 items-center text-left text-xl">
-                      <Check className="h-5 w-5 shrink-0 text-green-600"></Check>
+                      <Check className="h-5 w-5 shrink-0 text-purple-600"></Check>
                       5 Year print guarantee
                     </li>
                     <li className="flex gap-1.5 items-center text-left text-xl">
-                      <Check className="h-5 w-5 shrink-0 text-green-600"></Check>
+                      <Check className="h-5 w-5 shrink-0 text-purple-600"></Check>
                       Modern iPhone models supported
                     </li>
                   </div>
@@ -78,11 +78,11 @@ export default function Home() {
 
                   <div className="flex flex-col justify-between items-center sm:items-start">
                     <div className="flex  gap-0.5">
-                      <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                      <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                      <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                      <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                      <Star className="h-4 w-4 text-green-600 fill-green-600" />
+                      <Star className="h-4 w-4 text-purple-600 fill-purple-600" />
+                      <Star className="h-4 w-4 text-purple-600 fill-purple-600" />
+                      <Star className="h-4 w-4 text-purple-600 fill-purple-600" />
+                      <Star className="h-4 w-4 text-purple-600 fill-purple-600" />
+                      <Star className="h-4 w-4 text-purple-600 fill-purple-600" />
                     </div>
                     <p className="text-gray-500 text-[20px]">
                       <span className="font-semibold">1.250</span> Happy
@@ -119,21 +119,20 @@ export default function Home() {
               What our{" "}
               <span className="relative px-2">
                 Customers{" "}
-                <Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-500" />
+                <Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-purple-500" />
               </span>{" "}
               say?
             </h2>
-            <img src="/snake-2.png" className="w-24 order-0 lg:order-2"></img>
           </div>
 
           <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:max-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
             <div className="flex  md:relative flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
               <div className="flex gap-0.5 mb-2">
-                <Star className="h-5 w-5 text-green-600 fill-green-600" />
-                <Star className="h-5 w-5 text-green-600 fill-green-600" />
-                <Star className="h-5 w-5 text-green-600 fill-green-600" />
-                <Star className="h-5 w-5 text-green-600 fill-green-600" />
-                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-purple-600 fill-purple-600" />
+                <Star className="h-5 w-5 text-purple-600 fill-purple-600" />
+                <Star className="h-5 w-5 text-purple-600 fill-purple-600" />
+                <Star className="h-5 w-5 text-purple-600 fill-purple-600" />
+                <Star className="h-5 w-5 text-purple-600 fill-purple-600" />
               </div>
               <div className="text-lg leading-8">
                 <p>"The case feels durable and looking nice!"</p>
@@ -147,7 +146,7 @@ export default function Home() {
                 <div className="flex flex-col">
                   <p className="font-semibold">Jonathan</p>
                   <div className="flex gap-1.5 items-center text-zinc-600">
-                    <Check className="h-4 w-4 stroke-[3px] text-green-600" />
+                    <Check className="h-4 w-4 stroke-[3px] text-purple-600" />
                     <p className="text-sm">Verified Purchase</p>
                   </div>
                 </div>
@@ -158,11 +157,11 @@ export default function Home() {
 
             <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
               <div className="flex gap-0.5 mb-2">
-                <Star className="h-5 w-5 text-green-600 fill-green-600" />
-                <Star className="h-5 w-5 text-green-600 fill-green-600" />
-                <Star className="h-5 w-5 text-green-600 fill-green-600" />
-                <Star className="h-5 w-5 text-green-600 fill-green-600" />
-                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-purple-600 fill-purple-600" />
+                <Star className="h-5 w-5 text-purple-600 fill-purple-600" />
+                <Star className="h-5 w-5 text-purple-600 fill-purple-600" />
+                <Star className="h-5 w-5 text-purple-600 fill-purple-600" />
+                <Star className="h-5 w-5 text-purple-600 fill-purple-600" />
               </div>
               <div className="text-lg leading-8">
                 <p>
@@ -180,7 +179,7 @@ export default function Home() {
                 <div className="flex flex-col">
                   <p className="font-semibold">Denis</p>
                   <div className="flex gap-1.5 items-center text-zinc-600">
-                    <Check className="h-4 w-4 stroke-[3px] text-green-600" />
+                    <Check className="h-4 w-4 stroke-[3px] text-purple-600" />
                     <p className="text-sm">Verified Purchase</p>
                   </div>
                 </div>
@@ -200,7 +199,7 @@ export default function Home() {
             <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900">
                 Upload your photo and get{" "}
-                <span className="relative px-2 bg-green-600 text-white">
+                <span className="relative px-4 bg-purple-600 text-white rounded-md">
                   Your Own Case{" "}
                 
                 </span>{" "}
@@ -221,19 +220,19 @@ export default function Home() {
 
           <ul className="mx-auto mt-12 max-w-prose sm:text-lg space-y-2 w-fit">
             <li className="w-fit">
-              <Check className="h-5 w-5 text-green-600 inline mr-1.5"/>
+              <Check className="h-5 w-5 text-purple-600 inline mr-1.5"/>
               High-quality silicon material
             </li>
             <li className="w-fit">
-              <Check className="h-5 w-5 text-green-600 inline mr-1.5"/>
+              <Check className="h-5 w-5 text-purple-600 inline mr-1.5"/>
               Durable to scratches
             </li>
             <li className="w-fit">
-              <Check className="h-5 w-5 text-green-600 inline mr-1.5"/>
+              <Check className="h-5 w-5 text-purple-600 inline mr-1.5"/>
               Wireless charge compatible
             </li>
             <li className="w-fit">
-              <Check className="h-5 w-5 text-green-600 inline mr-1.5"/>
+              <Check className="h-5 w-5 text-purple-600 inline mr-1.5"/>
              1 year warranty
             </li>
 

@@ -170,7 +170,7 @@ const DesignConfigurator = ({
           </AspectRatio>
 
           {/* under its shadow for box not icluding phone image */}
-          <div className="absolute z-40 inset-0 left-3[px] top-px right-[3px] bottom-px rounded-[32px] shadow-[0_0_0_99999px_rgba(229,231,235,0.6)] "></div>
+          <div className="absolute z-40 inset-0 left-3[px] top-px right-[3px] bottom-px rounded-[32px] shadow-[0_0_0_99999px_rgba(229,231,235,0.6)]"></div>
 
           {/* under its color of case 2nd parameter its dynamic data */}
           <div
@@ -256,9 +256,10 @@ const DesignConfigurator = ({
                         value={color}
                         className={({ focus, checked }) =>
                           cn(
-                            "relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 active:ring-0 focus:ring-0 active:outline-none focus:outline-none border-2 border-transparent",
+                            "relative -m-0.5 flex cursor-pointer items-center justify-center bg-slate-200 rounded-full p-0.5 active:ring-0 focus:ring-0 active:outline-none focus:outline-none border-2 border-transparent",
                             {
                               [`border-${color.tw}`]: focus || checked,
+                              [`bg-${color.tw}`]: focus || checked,
                             }
                           )
                         }
