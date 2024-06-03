@@ -24,7 +24,7 @@ export default function Home() {
                 <p className="text-gray-500 mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
                   Capture your Favorite memories with your own,{" "}
                   <span className="font-semibold">one-of-one</span> phone case.
-                  CaseCobra allows you to protect your memories, not just your
+                  CaseGen allows you to protect your memories, not just your
                   phone case
                 </p>
 
