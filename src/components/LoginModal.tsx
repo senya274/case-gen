@@ -10,7 +10,7 @@ const LoginModal = ({isOpen, setIsOpen} : {
     setIsOpen:  Dispatch<SetStateAction<boolean>>
 }) => {
   return (
-    <div className="h-screen">
+    <div className="">
     <Dialog onOpenChange={setIsOpen} open={isOpen}>
         <DialogContent className='absolute z-[999999]'>
             <DialogHeader>
