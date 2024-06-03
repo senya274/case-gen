@@ -35,8 +35,8 @@ export async function POST(req: Request) {
         throw new Error("Invalid request metadata");
       }
 
-      const billingAddress = session.customer_details!.address
-      const shippingAddress = session.shipping_details!.address
+      const billingAddress = session.customer_details!.address;
+      const shippingAddress = session.shipping_details!.address;
 
       const updatedOrder = await db.order.update({
         where: {
@@ -44,7 +44,7 @@ export async function POST(req: Request) {
         },
         data: {
           isPaid: true,
-          shippingAddress: {
+          shippingAdress: {
             create: {
               name: session.customer_details!.name!,
               city: shippingAddress!.city!,
@@ -65,7 +65,7 @@ export async function POST(req: Request) {
             },
           },
         },
-      })
+      });
     }
     return NextResponse.json({ result: event, ok: true });
   } catch (err) {
